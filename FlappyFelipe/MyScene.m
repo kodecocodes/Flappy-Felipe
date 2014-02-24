@@ -158,7 +158,7 @@ static NSString *const iOSAppStoreURLFormat = @"itms-apps://itunes.apple.com/Web
 }
 
 - (void)updatePlayerPosition {
-  _player.position = CGPointMake((int)_desiredPosition.x, (int)_desiredPosition.y);
+  _player.position = CGPointMake((int)_desiredPosition.x, MIN((int)_desiredPosition.y, self.size.height));
 }
 
 - (void)setupPlayer {
