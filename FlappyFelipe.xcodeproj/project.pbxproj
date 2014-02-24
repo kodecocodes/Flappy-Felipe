@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3596CCD018AD39C200D941F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCCF18AD39C100D941F0 /* Foundation.framework */; };
+		3596CCD218AD39C200D941F0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCD118AD39C200D941F0 /* CoreGraphics.framework */; };
+		3596CCD418AD39C200D941F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCD318AD39C200D941F0 /* UIKit.framework */; };
+		3596CCD618AD39C200D941F0 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCD518AD39C200D941F0 /* SpriteKit.framework */; };
+		3596CCDC18AD39C200D941F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3596CCDA18AD39C200D941F0 /* InfoPlist.strings */; };
+		3596CCDE18AD39C200D941F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CCDD18AD39C200D941F0 /* main.m */; };
+		3596CCE218AD39C200D941F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CCE118AD39C200D941F0 /* AppDelegate.m */; };
+		3596CCE518AD39C200D941F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3596CCE318AD39C200D941F0 /* Main.storyboard */; };
+		3596CCE818AD39C200D941F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CCE718AD39C200D941F0 /* ViewController.m */; };
+		3596CCEB18AD39C200D941F0 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CCEA18AD39C200D941F0 /* MyScene.m */; };
+		3596CCED18AD39C200D941F0 /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 3596CCEC18AD39C200D941F0 /* Spaceship.png */; };
+		3596CCEF18AD39C200D941F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3596CCEE18AD39C200D941F0 /* Images.xcassets */; };
+		3596CCF618AD39C200D941F0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCF518AD39C200D941F0 /* XCTest.framework */; };
+		3596CCF718AD39C200D941F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCCF18AD39C100D941F0 /* Foundation.framework */; };
+		3596CCF818AD39C200D941F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3596CCD318AD39C200D941F0 /* UIKit.framework */; };
+		3596CD0018AD39C200D941F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3596CCFE18AD39C200D941F0 /* InfoPlist.strings */; };
+		3596CD0218AD39C200D941F0 /* FlappyFelipeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD0118AD39C200D941F0 /* FlappyFelipeTests.m */; };
+		3596CD2518AD39D000D941F0 /* backgrounds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD0D18AD39D000D941F0 /* backgrounds.atlas */; };
+		3596CD2618AD39D000D941F0 /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD0E18AD39D000D941F0 /* sprites.atlas */; };
+		3596CD2718AD39D000D941F0 /* SKAction+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1118AD39D000D941F0 /* SKAction+SKTExtras.m */; };
+		3596CD2818AD39D000D941F0 /* SKAction+SKTSpecialEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1318AD39D000D941F0 /* SKAction+SKTSpecialEffects.m */; };
+		3596CD2918AD39D000D941F0 /* SKEmitterNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1518AD39D000D941F0 /* SKEmitterNode+SKTExtras.m */; };
+		3596CD2A18AD39D000D941F0 /* SKNode+SKTDebugDraw.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1718AD39D000D941F0 /* SKNode+SKTDebugDraw.m */; };
+		3596CD2B18AD39D000D941F0 /* SKNode+SKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1918AD39D000D941F0 /* SKNode+SKTExtras.m */; };
+		3596CD2C18AD39D000D941F0 /* SKTAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1B18AD39D000D941F0 /* SKTAudio.m */; };
+		3596CD2D18AD39D000D941F0 /* SKTEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1D18AD39D000D941F0 /* SKTEffects.m */; };
+		3596CD2E18AD39D000D941F0 /* SKTTimingFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3596CD1F18AD39D000D941F0 /* SKTTimingFunctions.m */; };
+		3596CD2F18AD39D000D941F0 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD2218AD39D000D941F0 /* ding.wav */; };
+		3596CD3018AD39D000D941F0 /* flapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD2318AD39D000D941F0 /* flapping.wav */; };
+		3596CD3118AD39D000D941F0 /* whack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD2418AD39D000D941F0 /* whack.wav */; };
+		3596CD3318AD76C000D941F0 /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD3218AD76C000D941F0 /* falling.wav */; };
+		3596CD3518AD77B000D941F0 /* hitGround.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD3418AD77B000D941F0 /* hitGround.wav */; };
+		3596CD3918AD877B00D941F0 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD3818AD877B00D941F0 /* pop.wav */; };
+		3596CD3B18AD8B3000D941F0 /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3596CD3A18AD8B3000D941F0 /* coin.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3596CCF918AD39C200D941F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3596CCC418AD39C100D941F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3596CCCB18AD39C100D941F0;
+			remoteInfo = FlappyFelipe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3596CCCC18AD39C100D941F0 /* FlappyFelipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlappyFelipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3596CCCF18AD39C100D941F0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3596CCD118AD39C200D941F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3596CCD318AD39C200D941F0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3596CCD518AD39C200D941F0 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		3596CCD918AD39C200D941F0 /* FlappyFelipe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappyFelipe-Info.plist"; sourceTree = "<group>"; };
+		3596CCDB18AD39C200D941F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3596CCDD18AD39C200D941F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3596CCDF18AD39C200D941F0 /* FlappyFelipe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlappyFelipe-Prefix.pch"; sourceTree = "<group>"; };
+		3596CCE018AD39C200D941F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3596CCE118AD39C200D941F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3596CCE418AD39C200D941F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3596CCE618AD39C200D941F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3596CCE718AD39C200D941F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3596CCE918AD39C200D941F0 /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		3596CCEA18AD39C200D941F0 /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		3596CCEC18AD39C200D941F0 /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		3596CCEE18AD39C200D941F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3596CCF418AD39C200D941F0 /* FlappyFelipeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlappyFelipeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3596CCF518AD39C200D941F0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3596CCFD18AD39C200D941F0 /* FlappyFelipeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlappyFelipeTests-Info.plist"; sourceTree = "<group>"; };
+		3596CCFF18AD39C200D941F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3596CD0118AD39C200D941F0 /* FlappyFelipeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlappyFelipeTests.m; sourceTree = "<group>"; };
+		3596CD0D18AD39D000D941F0 /* backgrounds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = backgrounds.atlas; sourceTree = "<group>"; };
+		3596CD0E18AD39D000D941F0 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		3596CD1018AD39D000D941F0 /* SKAction+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTExtras.h"; sourceTree = "<group>"; };
+		3596CD1118AD39D000D941F0 /* SKAction+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTExtras.m"; sourceTree = "<group>"; };
+		3596CD1218AD39D000D941F0 /* SKAction+SKTSpecialEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKAction+SKTSpecialEffects.h"; sourceTree = "<group>"; };
+		3596CD1318AD39D000D941F0 /* SKAction+SKTSpecialEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKAction+SKTSpecialEffects.m"; sourceTree = "<group>"; };
+		3596CD1418AD39D000D941F0 /* SKEmitterNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKEmitterNode+SKTExtras.h"; sourceTree = "<group>"; };
+		3596CD1518AD39D000D941F0 /* SKEmitterNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKEmitterNode+SKTExtras.m"; sourceTree = "<group>"; };
+		3596CD1618AD39D000D941F0 /* SKNode+SKTDebugDraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTDebugDraw.h"; sourceTree = "<group>"; };
+		3596CD1718AD39D000D941F0 /* SKNode+SKTDebugDraw.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTDebugDraw.m"; sourceTree = "<group>"; };
+		3596CD1818AD39D000D941F0 /* SKNode+SKTExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+SKTExtras.h"; sourceTree = "<group>"; };
+		3596CD1918AD39D000D941F0 /* SKNode+SKTExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+SKTExtras.m"; sourceTree = "<group>"; };
+		3596CD1A18AD39D000D941F0 /* SKTAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTAudio.h; sourceTree = "<group>"; };
+		3596CD1B18AD39D000D941F0 /* SKTAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTAudio.m; sourceTree = "<group>"; };
+		3596CD1C18AD39D000D941F0 /* SKTEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTEffects.h; sourceTree = "<group>"; };
+		3596CD1D18AD39D000D941F0 /* SKTEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTEffects.m; sourceTree = "<group>"; };
+		3596CD1E18AD39D000D941F0 /* SKTTimingFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTTimingFunctions.h; sourceTree = "<group>"; };
+		3596CD1F18AD39D000D941F0 /* SKTTimingFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKTTimingFunctions.m; sourceTree = "<group>"; };
+		3596CD2018AD39D000D941F0 /* SKTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKTUtils.h; sourceTree = "<group>"; };
+		3596CD2218AD39D000D941F0 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		3596CD2318AD39D000D941F0 /* flapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flapping.wav; sourceTree = "<group>"; };
+		3596CD2418AD39D000D941F0 /* whack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whack.wav; sourceTree = "<group>"; };
+		3596CD3218AD76C000D941F0 /* falling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falling.wav; sourceTree = "<group>"; };
+		3596CD3418AD77B000D941F0 /* hitGround.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitGround.wav; sourceTree = "<group>"; };
+		3596CD3818AD877B00D941F0 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		3596CD3A18AD8B3000D941F0 /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3596CCC918AD39C100D941F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CCD218AD39C200D941F0 /* CoreGraphics.framework in Frameworks */,
+				3596CCD418AD39C200D941F0 /* UIKit.framework in Frameworks */,
+				3596CCD618AD39C200D941F0 /* SpriteKit.framework in Frameworks */,
+				3596CCD018AD39C200D941F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3596CCF118AD39C200D941F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CCF618AD39C200D941F0 /* XCTest.framework in Frameworks */,
+				3596CCF818AD39C200D941F0 /* UIKit.framework in Frameworks */,
+				3596CCF718AD39C200D941F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3596CCC318AD39C100D941F0 = {
+			isa = PBXGroup;
+			children = (
+				3596CCD718AD39C200D941F0 /* FlappyFelipe */,
+				3596CCFB18AD39C200D941F0 /* FlappyFelipeTests */,
+				3596CCCE18AD39C100D941F0 /* Frameworks */,
+				3596CCCD18AD39C100D941F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3596CCCD18AD39C100D941F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3596CCCC18AD39C100D941F0 /* FlappyFelipe.app */,
+				3596CCF418AD39C200D941F0 /* FlappyFelipeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3596CCCE18AD39C100D941F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3596CCCF18AD39C100D941F0 /* Foundation.framework */,
+				3596CCD118AD39C200D941F0 /* CoreGraphics.framework */,
+				3596CCD318AD39C200D941F0 /* UIKit.framework */,
+				3596CCD518AD39C200D941F0 /* SpriteKit.framework */,
+				3596CCF518AD39C200D941F0 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3596CCD718AD39C200D941F0 /* FlappyFelipe */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD0B18AD39D000D941F0 /* Resources */,
+				3596CCE018AD39C200D941F0 /* AppDelegate.h */,
+				3596CCE118AD39C200D941F0 /* AppDelegate.m */,
+				3596CCE318AD39C200D941F0 /* Main.storyboard */,
+				3596CCE618AD39C200D941F0 /* ViewController.h */,
+				3596CCE718AD39C200D941F0 /* ViewController.m */,
+				3596CCE918AD39C200D941F0 /* MyScene.h */,
+				3596CCEA18AD39C200D941F0 /* MyScene.m */,
+				3596CCEC18AD39C200D941F0 /* Spaceship.png */,
+				3596CCEE18AD39C200D941F0 /* Images.xcassets */,
+				3596CCD818AD39C200D941F0 /* Supporting Files */,
+			);
+			path = FlappyFelipe;
+			sourceTree = "<group>";
+		};
+		3596CCD818AD39C200D941F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3596CCD918AD39C200D941F0 /* FlappyFelipe-Info.plist */,
+				3596CCDA18AD39C200D941F0 /* InfoPlist.strings */,
+				3596CCDD18AD39C200D941F0 /* main.m */,
+				3596CCDF18AD39C200D941F0 /* FlappyFelipe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3596CCFB18AD39C200D941F0 /* FlappyFelipeTests */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD0118AD39C200D941F0 /* FlappyFelipeTests.m */,
+				3596CCFC18AD39C200D941F0 /* Supporting Files */,
+			);
+			path = FlappyFelipeTests;
+			sourceTree = "<group>";
+		};
+		3596CCFC18AD39C200D941F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3596CCFD18AD39C200D941F0 /* FlappyFelipeTests-Info.plist */,
+				3596CCFE18AD39C200D941F0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3596CD0B18AD39D000D941F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD0C18AD39D000D941F0 /* Art */,
+				3596CD0F18AD39D000D941F0 /* SKTUtils */,
+				3596CD2118AD39D000D941F0 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3596CD0C18AD39D000D941F0 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD0D18AD39D000D941F0 /* backgrounds.atlas */,
+				3596CD0E18AD39D000D941F0 /* sprites.atlas */,
+			);
+			path = Art;
+			sourceTree = "<group>";
+		};
+		3596CD0F18AD39D000D941F0 /* SKTUtils */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD1018AD39D000D941F0 /* SKAction+SKTExtras.h */,
+				3596CD1118AD39D000D941F0 /* SKAction+SKTExtras.m */,
+				3596CD1218AD39D000D941F0 /* SKAction+SKTSpecialEffects.h */,
+				3596CD1318AD39D000D941F0 /* SKAction+SKTSpecialEffects.m */,
+				3596CD1418AD39D000D941F0 /* SKEmitterNode+SKTExtras.h */,
+				3596CD1518AD39D000D941F0 /* SKEmitterNode+SKTExtras.m */,
+				3596CD1618AD39D000D941F0 /* SKNode+SKTDebugDraw.h */,
+				3596CD1718AD39D000D941F0 /* SKNode+SKTDebugDraw.m */,
+				3596CD1818AD39D000D941F0 /* SKNode+SKTExtras.h */,
+				3596CD1918AD39D000D941F0 /* SKNode+SKTExtras.m */,
+				3596CD1A18AD39D000D941F0 /* SKTAudio.h */,
+				3596CD1B18AD39D000D941F0 /* SKTAudio.m */,
+				3596CD1C18AD39D000D941F0 /* SKTEffects.h */,
+				3596CD1D18AD39D000D941F0 /* SKTEffects.m */,
+				3596CD1E18AD39D000D941F0 /* SKTTimingFunctions.h */,
+				3596CD1F18AD39D000D941F0 /* SKTTimingFunctions.m */,
+				3596CD2018AD39D000D941F0 /* SKTUtils.h */,
+			);
+			path = SKTUtils;
+			sourceTree = "<group>";
+		};
+		3596CD2118AD39D000D941F0 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				3596CD3A18AD8B3000D941F0 /* coin.wav */,
+				3596CD3818AD877B00D941F0 /* pop.wav */,
+				3596CD3418AD77B000D941F0 /* hitGround.wav */,
+				3596CD3218AD76C000D941F0 /* falling.wav */,
+				3596CD2218AD39D000D941F0 /* ding.wav */,
+				3596CD2318AD39D000D941F0 /* flapping.wav */,
+				3596CD2418AD39D000D941F0 /* whack.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3596CCCB18AD39C100D941F0 /* FlappyFelipe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3596CD0518AD39C200D941F0 /* Build configuration list for PBXNativeTarget "FlappyFelipe" */;
+			buildPhases = (
+				3596CCC818AD39C100D941F0 /* Sources */,
+				3596CCC918AD39C100D941F0 /* Frameworks */,
+				3596CCCA18AD39C100D941F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlappyFelipe;
+			productName = FlappyFelipe;
+			productReference = 3596CCCC18AD39C100D941F0 /* FlappyFelipe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3596CCF318AD39C200D941F0 /* FlappyFelipeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3596CD0818AD39C200D941F0 /* Build configuration list for PBXNativeTarget "FlappyFelipeTests" */;
+			buildPhases = (
+				3596CCF018AD39C200D941F0 /* Sources */,
+				3596CCF118AD39C200D941F0 /* Frameworks */,
+				3596CCF218AD39C200D941F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3596CCFA18AD39C200D941F0 /* PBXTargetDependency */,
+			);
+			name = FlappyFelipeTests;
+			productName = FlappyFelipeTests;
+			productReference = 3596CCF418AD39C200D941F0 /* FlappyFelipeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3596CCC418AD39C100D941F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Razeware LLC";
+				TargetAttributes = {
+					3596CCCB18AD39C100D941F0 = {
+						DevelopmentTeam = KFCNEC27GU;
+					};
+					3596CCF318AD39C200D941F0 = {
+						TestTargetID = 3596CCCB18AD39C100D941F0;
+					};
+				};
+			};
+			buildConfigurationList = 3596CCC718AD39C100D941F0 /* Build configuration list for PBXProject "FlappyFelipe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3596CCC318AD39C100D941F0;
+			productRefGroup = 3596CCCD18AD39C100D941F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3596CCCB18AD39C100D941F0 /* FlappyFelipe */,
+				3596CCF318AD39C200D941F0 /* FlappyFelipeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3596CCCA18AD39C100D941F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CCDC18AD39C200D941F0 /* InfoPlist.strings in Resources */,
+				3596CD3018AD39D000D941F0 /* flapping.wav in Resources */,
+				3596CD3318AD76C000D941F0 /* falling.wav in Resources */,
+				3596CD3118AD39D000D941F0 /* whack.wav in Resources */,
+				3596CD2F18AD39D000D941F0 /* ding.wav in Resources */,
+				3596CD3518AD77B000D941F0 /* hitGround.wav in Resources */,
+				3596CD3918AD877B00D941F0 /* pop.wav in Resources */,
+				3596CCEF18AD39C200D941F0 /* Images.xcassets in Resources */,
+				3596CD2518AD39D000D941F0 /* backgrounds.atlas in Resources */,
+				3596CCED18AD39C200D941F0 /* Spaceship.png in Resources */,
+				3596CD3B18AD8B3000D941F0 /* coin.wav in Resources */,
+				3596CD2618AD39D000D941F0 /* sprites.atlas in Resources */,
+				3596CCE518AD39C200D941F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3596CCF218AD39C200D941F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CD0018AD39C200D941F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3596CCC818AD39C100D941F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CCEB18AD39C200D941F0 /* MyScene.m in Sources */,
+				3596CD2D18AD39D000D941F0 /* SKTEffects.m in Sources */,
+				3596CD2B18AD39D000D941F0 /* SKNode+SKTExtras.m in Sources */,
+				3596CCE818AD39C200D941F0 /* ViewController.m in Sources */,
+				3596CD2918AD39D000D941F0 /* SKEmitterNode+SKTExtras.m in Sources */,
+				3596CD2718AD39D000D941F0 /* SKAction+SKTExtras.m in Sources */,
+				3596CD2E18AD39D000D941F0 /* SKTTimingFunctions.m in Sources */,
+				3596CCE218AD39C200D941F0 /* AppDelegate.m in Sources */,
+				3596CCDE18AD39C200D941F0 /* main.m in Sources */,
+				3596CD2A18AD39D000D941F0 /* SKNode+SKTDebugDraw.m in Sources */,
+				3596CD2818AD39D000D941F0 /* SKAction+SKTSpecialEffects.m in Sources */,
+				3596CD2C18AD39D000D941F0 /* SKTAudio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3596CCF018AD39C200D941F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3596CD0218AD39C200D941F0 /* FlappyFelipeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3596CCFA18AD39C200D941F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3596CCCB18AD39C100D941F0 /* FlappyFelipe */;
+			targetProxy = 3596CCF918AD39C200D941F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3596CCDA18AD39C200D941F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3596CCDB18AD39C200D941F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3596CCE318AD39C200D941F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3596CCE418AD39C200D941F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3596CCFE18AD39C200D941F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3596CCFF18AD39C200D941F0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3596CD0318AD39C200D941F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ray Wenderlich (JW4X86528D)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3596CD0418AD39C200D941F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Razeware LLC (KFCNEC27GU)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3596CD0618AD39C200D941F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyFelipe/FlappyFelipe-Prefix.pch";
+				INFOPLIST_FILE = "FlappyFelipe/FlappyFelipe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3596CD0718AD39C200D941F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyFelipe/FlappyFelipe-Prefix.pch";
+				INFOPLIST_FILE = "FlappyFelipe/FlappyFelipe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3596CD0918AD39C200D941F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappyFelipe.app/FlappyFelipe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyFelipe/FlappyFelipe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FlappyFelipeTests/FlappyFelipeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3596CD0A18AD39C200D941F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlappyFelipe.app/FlappyFelipe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlappyFelipe/FlappyFelipe-Prefix.pch";
+				INFOPLIST_FILE = "FlappyFelipeTests/FlappyFelipeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3596CCC718AD39C100D941F0 /* Build configuration list for PBXProject "FlappyFelipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3596CD0318AD39C200D941F0 /* Debug */,
+				3596CD0418AD39C200D941F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3596CD0518AD39C200D941F0 /* Build configuration list for PBXNativeTarget "FlappyFelipe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3596CD0618AD39C200D941F0 /* Debug */,
+				3596CD0718AD39C200D941F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3596CD0818AD39C200D941F0 /* Build configuration list for PBXNativeTarget "FlappyFelipeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3596CD0918AD39C200D941F0 /* Debug */,
+				3596CD0A18AD39C200D941F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3596CCC418AD39C100D941F0 /* Project object */;
+}
