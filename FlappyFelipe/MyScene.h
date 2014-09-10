@@ -25,6 +25,6 @@ typedef NS_ENUM(int, GameState) {
 
 -(id)initWithSize:(CGSize)size state:(GameState)state delegate:(id<MySceneDelegate>)delegate;
 
-@property (strong, nonatomic) id<MySceneDelegate> delegate;
+@property (strong, nonatomic) id<MySceneDelegate> sceneDelegate;
 
 @end

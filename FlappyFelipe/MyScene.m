@@ -101,7 +101,7 @@ static NSString *const iOSAppStoreURLFormat = @"itms-apps://itunes.apple.com/Web
 -(id)initWithSize:(CGSize)size state:(GameState)state delegate:(id<MySceneDelegate>)delegate {
   if (self = [super initWithSize:size]) {
     
-    _delegate = delegate;
+    _sceneDelegate = delegate;
     _gameState = state;
     
     _worldNode = [SKNode node];
@@ -493,7 +493,7 @@ static NSString *const iOSAppStoreURLFormat = @"itms-apps://itunes.apple.com/Web
 
   [self runAction:_popAction];
 
-  SKScene *newScene = [[MyScene alloc] initWithSize:self.size state:state delegate:self.delegate];
+  SKScene *newScene = [[MyScene alloc] initWithSize:self.size state:state delegate:self.sceneDelegate];
   SKTransition *transition = [SKTransition fadeWithColor:[SKColor blackColor] duration:0.5];
   [self.view presentScene:newScene transition:transition];
 }
@@ -785,7 +785,7 @@ static NSString *const iOSAppStoreURLFormat = @"itms-apps://itunes.apple.com/Web
 - (void)shareScore {
 
   NSString *initialTextString = [NSString stringWithFormat:@"OMG! I scored %d points in Flappy Felipe! -> http://itunes.apple.com/app/id%d", _score, APP_STORE_ID];
-  [self.delegate shareString:initialTextString];
+  [self.sceneDelegate shareString:initialTextString];
 }
 
 - (void)learn {
